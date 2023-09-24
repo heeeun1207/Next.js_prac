@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
@@ -42,12 +43,13 @@ const Button = styled.button`
 `;
 
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <Container>
       <Titel>Counter App</Titel>
       <Contents>
         <Button>-</Button>
-        <Label>0</Label>
+        <Label>{counter}</Label>
         <Button>+</Button>
       </Contents>
     </Container>
