@@ -44,13 +44,21 @@ const Button = styled.button`
 
 function App() {
   const [counter, setCounter] = useState(0);
+
+  const sub = () => {
+    setCounter(counter - 1);
+  };
+
+  const add = () => {
+    setCounter(counter + 1);
+  };
   return (
     <Container>
       <Titel>Counter App</Titel>
       <Contents>
-        <Button>-</Button>
+        <Button onClick={sub}>-</Button>
         <Label>{counter}</Label>
-        <Button>+</Button>
+        <Button onClick={add}>+</Button>
       </Contents>
     </Container>
   );
