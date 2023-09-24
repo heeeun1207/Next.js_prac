@@ -26,13 +26,13 @@ const Label = styled.span`
 const Button = styled.button`
   border: 0;
   color: #ffffff;
-  background-color: #ff5722;
+  background-color: #bda5c3;
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 4px;
 
   &:hover {
-    background-color: #ff5722;
+    background-color: #bda5c3;
     opacity: 0.8;
   }
 
