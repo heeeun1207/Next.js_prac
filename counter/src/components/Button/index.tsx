@@ -18,6 +18,11 @@ const Container = styled.button`
   }
 `;
 
+interface Props {
+  readonly: string;
+  readonly onClick: () => void;
+}
+
 export const Button = () => {
   return <Container onClick={() => console.log('click')}>test</Container>;
 };
