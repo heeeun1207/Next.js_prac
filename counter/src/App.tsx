@@ -28,16 +28,23 @@ const Label = styled.span`
 function App() {
   const [counter, setCounter] = useState(0);
 
+  const add = () => {
+    setCounter(counter + 1);
+  };
+
+  const sub = () => {
+    setCounter(counter - 1);
+  };
+
   return (
     <Container>
       <Title>Counter App</Title>
       <Contents>
-        <Button />
+        <Button label="-" onClick={sub} />
         <Label>{counter}</Label>
-        <Button />
+        <Button label="+" onClick={add} />
       </Contents>
     </Container>
   );
 }
-
 export default App;
