@@ -1,21 +1,19 @@
 import styled from '@emotion/styled';
-import { Title } from 'components/Title';
 
 const Container = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background: #eeeeee;
 `;
 
-function App() {
+const Lable = styled.h1`
+  margin-top: 0;
+`;
+
+export const Title = () => {
   return (
     <Container>
-      <Title />
+      <Lable>할 일 목록</Lable>
     </Container>
   );
-}
-
-export default App;
+};
