@@ -13,7 +13,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Title />
+      <Title label="할 일 목록" />
     </Container>
   );
 }

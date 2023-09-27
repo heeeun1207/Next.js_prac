@@ -10,10 +10,14 @@ const Lable = styled.h1`
   margin-top: 0;
 `;
 
-export const Title = () => {
+interface Props {
+  readonly label: string;
+}
+
+export const Title = ({ label }: Props) => {
   return (
     <Container>
-      <Lable>할 일 목록</Lable>
+      <Lable>{label}</Lable>
     </Container>
   );
 };
